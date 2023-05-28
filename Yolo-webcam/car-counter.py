@@ -77,7 +77,7 @@ while True:
        if lineLimits[0]<cx< lineLimits[2] and lineLimits[1]-10 <cy<lineLimits[3]+10:
            if totalcounts.count(id) == 0:
                totalcounts.append(id)
-    cvzone.putTextRect(img, f'Count: {len(totalcounts)} {currentclass}', (50, 50))
+    cvzone.putTextRect(img, f'Count: {len(totalcounts)}', (50, 50))
 
     cv2.imshow("image", img)
     #cv2.imshow("imageRegion", imgregen)
